@@ -1,0 +1,225 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Background Images */
+.background-images {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Center the Logo */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #555;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    margin-left: auto;
+    gap: 0;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Book Sections */
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book {
+    background: #fff;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.book img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.book button {
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 500px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Upload Book Section - Centered */
+#upload-book-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#upload-book-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#upload-book-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#upload-book-section input[type="text"],
+#upload-book-section input[type="number"],
+#upload-book-section input[type="file"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#upload-book-section button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#upload-book-section button:hover {
+    background-color: #218838;
+}

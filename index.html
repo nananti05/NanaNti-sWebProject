@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookRevive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Images -->
+    <div class="background-images">
+        <img src="backgroundimage2.jpeg" alt="Book 1" class="background-image">
+        <img src="backgroundimage4.jpg" alt="Book 2" class="background-image">
+        <img src="bookbackgrround1.webp" alt="Book 3" class="background-image">
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>BookRevive</h1>
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#" data-page="about">About</a></li>
+                <li><a href="#" data-page="contact">Contact</a></li>
+                <li><a href="#" id="login-btn">Login/Register</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search for books...">
+                <button id="search-btn">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="hero">
+            <h1>Welcome to BookRevive</h1>
+            <p>Buy, Sell, and Discover Used Books</p>
+            <button id="explore-btn">Explore Now</button>
+        </section>
+
+        <!-- Featured Books Section -->
+        <section id="featured-books">
+            <h1>Featured Books</h1>
+            <div class="book-container">
+                <div class="book">
+                    <img src="book10.jpg" alt="Book 1">
+                    <h2>Foreign Deceit</h2>
+                    <p>by Paulo Coelho</p>
+                    <button class="buy-btn">Buy</button>
+                </div>
+                <div class="book">
+                    <img src="book2.jpg" alt="Book 2">
+                    <h2>Lonely Affairs</h2>
+                    <p>by Douglas Adams</p>
+                    <button class="buy-btn">Buy</button>
+                </div>
+                <div class="book">
+                    <img src="book3.jpg" alt="Book 3">
+                    <h2>Foreign Authors</h2>
+                    <p>by Jane Austen</p>
+                    <button class="buy-btn">Buy</button>
+                </div>
+                <div class="book">
+                    <img src="book6.jpeg" alt="Book 4">
+                    <h2>Wild Country</h2>
+                    <p>by C.S. Lewis</p>
+                    <button class="buy-btn">Buy</button>
+                </div>
+                <div class="book">
+                    <img src="book7.jpg" alt="Book 5">
+                    <h2>Death Of a Mockingbird</h2>
+                    <p>by Harper Lee</p>
+                    <button class="buy-btn">Buy</button>
+                </div>
+                <div class="book">
+                    <img src="book8.jpg" alt="Book 6">
+                    <h2>Foreign Authors Vol.2</h2>
+                    <p>by J.R.R. Tolkien</p>
+                    <button class="buy-btn">Buy</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommended Books Section -->
+        <section id="recommended-books">
+            <h1>Recommended Books</h1>
+            <div class="book-container">
+                <div class="book">
+                    <img src="little women.jpg" alt="Book 1">
+                    <h2>Litte Women</h2>
+                    <p>by Felix Abi Kweitsu</p>
+                    <button class="buy-btn">Buy</button>
+                </div>
+                <div class="book">
+                    <img src="how to die famous.jpg" alt="Book 2">
+                    <h2>How To Die Famous</h2>
+                    <p>by D.K. Collins</p>
+                    <button class="buy-btn">Buy</button>
+                </div>
+                <div class="book">
+                    <img src="the great gatsby.jpeg" alt="Book 3">
+                    <h2>The Great Gasby</h2>
+                    <p>by A.Y. Ronald</p>
+                    <button class="buy-btn">Buy</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Reviews Section -->
+        <section id="user-reviews">
+            <h1>User Reviews</h1>
+            <div class="review">
+                <h3>Thaddeus Agyekum</h3>
+                <p>"This platform is amazing! I found books I never thought I'd find. Highly recommend it!"</p>
+            </div>
+            <div class="review">
+                <h3>Rita Esi Agyekum</h3>
+                <p>"I sold my old books easily and bought some amazing second-hand books. Great service!"</p>
+            </div>
+        </section>
+
+       <!-- Upload Book Section -->
+<section id="upload-book-section">
+    <h2>Upload Your Book</h2>
+    <form id="upload-book-form">
+        <input type="text" id="book-title" placeholder="Book Title" required>
+        <input type="text" id="book-author" placeholder="Author Name" required>
+        <input type="number" id="book-price" placeholder="Price" required>
+        <input type="file" id="book-image" accept="image/*" required>
+        <button type="submit">Upload Book</button>
+    </form>
+</section>
+
+    </main>
+
+    <!-- Login/Register Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-target="login-modal">&times;</span>
+            <h1>Login/Register</h1>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit">Login</button>
+                <button id="register-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 BookRevive. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
